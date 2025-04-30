@@ -1,3 +1,5 @@
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 public class Main {
@@ -27,6 +29,11 @@ public class Main {
         System.out.println("Digite o endereço do cliente: ");
         String enderecoCliente = scanner.nextLine();
 
+        Date dataHoraAtual = new Date();
+        SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        String dataHoraFormatada = formato.format(dataHoraAtual);
+        System.out.println("Data e hora: " + dataHoraFormatada);
 
+        
     }
 }
