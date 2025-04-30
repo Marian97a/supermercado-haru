@@ -13,5 +13,20 @@ public class Main {
         String resposta = scanner.nextLine().trim().toLowerCase();
 
         boolean frios = resposta.equals("sim");
+
+        int quantidadeVolumes = 0;
+
+        if (frios) {
+            System.out.println("Digite quantidade de volume no(s) refrigeradores");
+            quantidadeVolumes = scanner.nextInt();
+            scanner.nextLine();
+        } else {
+            System.out.println("NÃO HÁ VOLUMES! ");
+        }
+
+        System.out.println("Digite o endereço do cliente: ");
+        String enderecoCliente = scanner.nextLine();
+
+
     }
 }
