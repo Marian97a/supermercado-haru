@@ -5,5 +5,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("---Supermercado Haru---");
+
+        System.out.println("Digite o nome do cliente: ");
+        String nomeCliente = scanner.nextLine();
     }
 }
