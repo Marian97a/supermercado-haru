@@ -19,7 +19,7 @@ public class Main {
         int quantidadeVolumes = 0;
 
         if (frios) {
-            System.out.println("Digite quantidade de volume no(s) refrigeradores");
+            System.out.println("Digite quantidade de volume no(s) refrigerador(es)");
             quantidadeVolumes = scanner.nextInt();
             scanner.nextLine();
         } else {
