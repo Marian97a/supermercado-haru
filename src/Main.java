@@ -43,6 +43,6 @@ public class Main {
         System.out.println("Volumes Gelados: " + (quantidadeVolumes > 0 ? quantidadeVolumes : "NÃO TEM"));
         System.out.println("Endereço: " + enderecoCliente);
         System.out.println("Data/Horario: " + dataHoraFormatada );
-        System.out.println(observacoes);
+        System.out.println("Observações: " + observacoes);
     }
 }
