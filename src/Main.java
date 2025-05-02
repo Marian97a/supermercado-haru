@@ -34,11 +34,15 @@ public class Main {
         String dataHoraFormatada = formato.format(dataHoraAtual);
         System.out.println("Data e hora: " + dataHoraFormatada);
 
+        System.out.println("---OBSERVAÇÕES---");
+        String observacoes = scanner.nextLine();
+
         System.out.println("\n");
         System.out.println("---Supermercado Haru---");
         System.out.println("Nome cliente: " + nomeCliente);
         System.out.println("Volumes Gelados: " + (quantidadeVolumes > 0 ? quantidadeVolumes : "NÃO TEM"));
         System.out.println("Endereço: " + enderecoCliente);
         System.out.println("Data/Horario: " + dataHoraFormatada );
+        System.out.println(observacoes);
     }
 }
