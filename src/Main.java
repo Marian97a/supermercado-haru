@@ -44,5 +44,13 @@ public class Main {
         System.out.println("Endereço: " + enderecoCliente);
         System.out.println("Data/Horario: " + dataHoraFormatada );
         System.out.println("Observações: " + observacoes);
+
+        System.out.println("Nome cliente: " + nomeCliente);
+        System.out.println("Total Volumes: " + quantidadeVolumes);
+        String totalVolumes = scanner.nextLine();
+
     }
 }
+
+
+

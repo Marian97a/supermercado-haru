@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Supermercado Haru - Empacotamento</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-   
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supermercado Haru - Empacotamento</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Supermercado Haru</h2>
+
+  <!-- Formulário 1 -->
+  <form id="formulario1">
+    <label>Nome do cliente: <input type="text" id="nome" required></label><br><br>
+    <label>Volumes refrigerados: 
+      <select id="frios">
+        <option value="nao">Não</option>
+        <option value="sim">Sim</option>
+      </select>
+    </label><br><br>
+    <div id="qtd-frios" style="display: none;">
+      <label>Quantidade de volumesFrios: <input type="number" id="quantidade" min="1"></label><br><br>
+    </div>
+    <label>Endereço do cliente: <input type="text" id="endereco" required></label><br><br>
+    <label>Observações: <input type="text" id="observacoes"></label><br><br>
+    <button type="submit">Gerar Resumo</button>
+  </form>
+
+  <!-- Resumo 1 -->
+  <div class="print-section" id="resumo1" style="display:none;"></div>
+  <button onclick="printSection('resumo1')" id="print1" style="display:none;">🖨️ Imprimir Resumo</button>
+
+  <!-- Formulário 2 -->
+  <form id="formulario2" style="display:none;">
+    <hr>
+    <h3>Impressão de etiquetas</h3>
+    <label>Nome do cliente: <input type="text" id="nome2" required></label><br><br>
+    <label>VolumesFrios: <input type="number" id="volumesFrios" min="0" required></label><br><br>
+    <label>Volumes embalados: <input type="number" id="volumesEmbalados" min="0" required></label><br><br>
+    <label>Quantidade de cópias: <input type="number" id="qtdCopias" min="1" required></label><br><br>
+    <button type="submit">Gerar Etiquetas</button>
+  </form>
+
+  <!-- Etiquetas -->
+  <div class="print-section" id="etiquetas" style="display:none;"></div>
+  <button onclick="printSection('etiquetas')" id="print2" style="display:none;">🖨️ Imprimir Etiquetas</button>
+
+    <script src="script.js"></script>
+  </body>
 </html>
