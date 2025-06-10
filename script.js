@@ -35,8 +35,10 @@ form1.addEventListener("submit", (e) => {
 
   // Exibir segundo formulário
   form2.style.display = "block";
-  document.getElementById("nome2").value = nome; // Preenche nome no segundo form
+  document.getElementById("nome2").value = nome;
+  document.getElementById("volumesFrios").value = frios && quantidade ? quantidade : 0;
 });
+
 
 form2.addEventListener("submit", (e) => {
   e.preventDefault();
