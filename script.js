@@ -10,6 +10,7 @@ const form1 = document.getElementById("formulario1");
     form1.addEventListener("submit", (e) => {
       e.preventDefault();
 
+      const operadorCaixa = document.getElementById("operadorCaixa").value;
       const nome = document.getElementById("nome").value;
       const frios = document.getElementById("frios").value === "sim";
       const quantidade = parseInt(document.getElementById("quantidade").value) || 0;
@@ -19,6 +20,7 @@ const form1 = document.getElementById("formulario1");
 
       const resumo = `
         <strong>--- Supermercado Haru ---</strong><br>
+        Operador(a) Caixa: ${operadorCaixa}<br>
         Nome cliente: ${nome}<br>
         VolumesFrios: ${frios && quantidade ? quantidade : "NÃO TEM"}<br>
         Endereço: ${endereco}<br>
